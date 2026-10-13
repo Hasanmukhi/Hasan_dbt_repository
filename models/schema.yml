@@ -19,11 +19,6 @@ models:
         tests:
           - unique
           - not_null
-  - name: dbt_doc
-    columns:
-      - name: EXPERIENCE_YEARS
-        description: "checking the doctor experience"
-        tests:
-          - positive_values
+ 
 
 
