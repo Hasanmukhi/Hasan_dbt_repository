@@ -3,6 +3,7 @@ version: 2
 
 sources:
     - name: stg_to_trg
+      description: Stage to target pipeline
       database: SLO_DB
       schema: public
       tables: 

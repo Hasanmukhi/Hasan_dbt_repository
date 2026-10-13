@@ -1,0 +1,1 @@
+select * from  SLO_DB.PUBLIC.DOC;
