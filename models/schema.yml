@@ -1,24 +1,29 @@
-
 version: 2
 
 sources:
-    - name: stg_to_trg
-      description: Stage to target pipeline
-      database: SLO_DB
-      schema: public
-      tables: 
-          - name: DOC_OLDDATA
-          - name: DOC2
-          - name: empsal
+  - name: stg_to_trg
+    description: Stage to target pipeline
+    database: SLO_DB
+    schema: public
+    tables:
+      - name: DOC_OLDDATA   
+      - name: DOC2
+      - name: empsal
+
+models:
+  - name: my_second_dbt_model
+    description: "A starter dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+  - name: dbt_doc
+    columns:
+      - name: EXPERIENCE_YEARS
+        description: "checking the doctor experience"
+        tests:
+          - positive_values
 
 
-models: 
-
-    - name: my_second_dbt_model
-      description: "A starter dbt model"
-      columns:
-          - name: id
-            description: "The primary key for this table"
-            tests:
-                - unique
-                - not_null

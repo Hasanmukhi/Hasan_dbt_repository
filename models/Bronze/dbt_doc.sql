@@ -6,5 +6,4 @@ with dedup as (
 )
 
 select * from  dedup
-where rnk>1
 
