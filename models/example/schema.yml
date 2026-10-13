@@ -8,6 +8,8 @@ sources:
       tables: 
           - name: DOC_OLDDATA
           - name: DOC2
+          - name: empsal
+
 
 models: 
 
